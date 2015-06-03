@@ -1,25 +1,20 @@
 {
   "name": "SPXKeychain",
   "version": "0.1.0",
-  "summary": "A short description of SPXKeychain.",
-  "description": "                       An optional longer description of SPXKeychain\n\n                       * Markdown format.\n                       * Don't worry about the indent, we strip it!\n",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/SPXKeychain",
+  "summary": "My iOS Keychain wrapper",
+  "homepage": "https://github.com/shaps80/SPXKeychain",
   "license": "MIT",
   "authors": {
-    "Shaps Mohsenin": "shaps@theappbusiness.com"
+    "Shaps Mohsenin": "shapsuk@me.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/SPXKeychain.git",
+    "git": "https://github.com/shaps80/SPXKeychain.git",
     "tag": "0.1.0"
   },
+  "social_media_url": "https://twitter.com/shaps",
   "platforms": {
     "ios": "7.0"
   },
   "requires_arc": true,
-  "source_files": "Pod/Classes/**/*",
-  "resource_bundles": {
-    "SPXKeychain": [
-      "Pod/Assets/*.png"
-    ]
-  }
+  "source_files": "Pod/Classes/**/*.{h,m}"
 }
