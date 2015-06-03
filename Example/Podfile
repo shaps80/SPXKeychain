@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'SPXKeychain_Example', :exclusive => true do
+  pod "SPXKeychain", :path => "../"
+end
+
+target 'SPXKeychain_Tests', :exclusive => true do
+  pod "SPXKeychain", :path => "../"
+
+  pod 'Kiwi'
+end
