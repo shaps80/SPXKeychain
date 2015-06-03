@@ -7,23 +7,21 @@
 //
 
 #import "SPXViewController.h"
+#import "SPXKeychain.h"
 
 @interface SPXViewController ()
-
 @end
 
 @implementation SPXViewController
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
+  [super viewDidLoad];
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+  SPXKeychain *keychain = [SPXKeychain sharedInstance];
+  keychain[@"test"] = @"4";
+  
+  NSLog(@"%@", keychain[@"test"]);
 }
 
 @end
